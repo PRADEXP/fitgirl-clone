@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(36, 4, 43);
+}
+h1,p,h3{
+    color:rgb(240, 235, 235);
+    font-family: 'Times New Roman', Times, serif;
+}
+.g12:hover{
+    animation: slide;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-timing-function:cubic-bezier(0.50,0.44, 1, 1);
+    animation-direction:alternate-reverse;
+}
+.first{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    
+}
+@keyframes slide {
+    0%{
+        transform: translate(600px);
+    }
+    100%{
+         transform: translateX(0px);
+    }
+}
+.g12{
+    margin-left: 10px;
+}
+.image{
+    animation: posting;
+    animation-timing-function: ease;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+}
+@keyframes posting {
+    0%{
+        transform: translate(500px,-500px) rotate(-90deg);
+    }
+    100%{
+        transform: translateX(0px)  rotate(0deg);
+    }
+    
+}
+
